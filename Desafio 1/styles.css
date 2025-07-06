@@ -1,0 +1,115 @@
+/* -------------------- Estilo Global -------------------- */
+* {
+    font-family: 'poppins', sans-serif; /* Define a fonte padrão como Poppins */
+    margin: 0;                          /* Remove as margens padrão de todos os elementos */
+    padding: 0;                         /* Remove o preenchimento padrão */
+    box-sizing: border-box;            /* Inclui borda e padding no cálculo da largura/altura */
+}
+
+/* -------------------- Cabeçalho (header) -------------------- */
+header {
+    margin-top: 47px;     /* Espaço acima do header */
+    margin-left: 42px;    /* Espaço à esquerda do header */
+}
+
+/* -------------------- Links do header -------------------- */
+.link-header {
+    font-weight: 400;         /* Peso da fonte (normal) */
+    font-size: 14px;          /* Tamanho da fonte */
+    line-height: 21px;        /* Altura da linha */
+    color: #17233d;           /* Cor do texto (azul escuro) */
+    margin-right: 32px;       /* Espaço à direita entre os links */
+    cursor: pointer;          /* Muda o cursor para “mãozinha” */
+}
+
+/* -------------------- Botão do header -------------------- */
+.button-header {
+    width: 124px;                 /* Largura do botão */
+    height: 51px;                 /* Altura do botão */
+    cursor: pointer;              /* Cursor clicável */
+    background: #6FBF44;          /* Cor de fundo verde */
+    border: 1px solid #4cb538;    /* Borda verde mais escura */
+    border-radius: 6px;           /* Cantos arredondados */
+    font-weight: 500;             /* Peso da fonte (semi-negrito) */
+    font-size: 16px;              /* Tamanho do texto */
+    line-height: 24px;            /* Altura da linha */
+    letter-spacing: 1px;          /* Espaçamento entre letras */
+    color: #ffffffff;             /* Cor do texto (branco) */
+}
+
+/* -------------------- Imagem principal -------------------- */
+img {
+    margin: 163px 0 0 123px; /* Margem: top 163px, right 0, bottom 0, left 123px */
+}
+
+/* -------------------- Seção principal -------------------- */
+section {
+    margin-left: 84px;      /* Espaço à esquerda da seção */
+    display: inline-block;  /* Permite que fique ao lado de outros elementos */
+    width: 493px;           /* Largura fixa da seção */
+}
+
+/* -------------------- Título principal -------------------- */
+h1 {
+    font-weight: 700;               /* Peso da fonte (negrito) */
+    font-size: 62px;                /* Tamanho grande do título */
+    line-height: 82px;              /* Altura da linha */
+    letter-spacing: 0.596154px;     /* Espaçamento entre letras */
+    color: #161a49;                 /* Cor azul escuro */
+}
+
+/* -------------------- Parágrafos -------------------- */
+p {
+    font-weight: 400;           /* Peso normal */
+    font-size: 18px;            /* Tamanho médio */
+    line-height: 33px;          /* Espaço entre linhas */
+    letter-spacing: 0.5px;      /* Espaço entre letras */
+    color: #48505a;             /* Cor cinza escuro */
+    margin-top: 47px;           /* Espaço acima do parágrafo */
+    margin-bottom: 55px;        /* Espaço abaixo do parágrafo */
+}
+
+/* -------------------- Botão de ação principal -------------------- */
+button {
+    font-weight: 500;       /* Semi-negrito */
+    font-size: 18px;        /* Tamanho da fonte */
+    line-height: 27px;      /* Altura da linha */
+    letter-spacing: 1px;    /* Espaço entre letras */
+    color: #6FBF44;         /* Cor verde */
+    cursor: pointer;        /* Cursor clicável */
+    background: transparent;/* Fundo transparente */
+    border: none;           /* Sem borda */
+}
+
+/* -------------------- Estilos para telas pequenas (celular/tablet) -------------------- */
+@media screen and (max-width:768px) {
+
+    /* Esconde os links do topo */
+    .link-header {
+        display: none;
+    }
+
+    /* Título adaptado para telas pequenas */
+    h1 {
+        margin-top: 20px;     /* Menor margem superior */
+        font-size: 36px;      /* Título menor */
+        line-height: 46px;    /* Altura da linha reduzida */
+    }
+
+    /* Texto adaptado */
+    p {
+        font-size: 16px;       /* Texto menor */
+        line-height: 24px;     /* Menor altura de linha */
+        margin-top: 20px;      /* Menor margem superior */
+        margin-bottom: 30px;   /* Menor margem inferior */
+    }
+
+    /* Imagem adaptada para celular */
+    img {
+        width: 312px;               /* Largura da imagem reduzida */
+        height: auto;               /* Altura ajustada automaticamente */
+        padding: 0;                 /* Sem preenchimento */
+        position: absolute;         /* Posição absoluta na tela */
+        margin: 500px 39px 22px 39px; /* Espaços ao redor da imagem */
+    }
+}
